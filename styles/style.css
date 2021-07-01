@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0%;
+    min-width: 1060px;
+    overflow-x: hidden;
+    font-size: 14px;
+    background-image: url(../img/sugoi_thumbnail_0324.png);
+}
+
+main {
+    padding: 0 60px;
+    margin: 0 auto;
+    width: 960px;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.flexRow {
+    display: flex;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.justifyCenter {
+    align-items: center;
+}
+
+.sns {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.sns div {
+    padding: 0 10px;
+}
+
+.sns div img {
+    width: 79px;
+}
+
+header {
+    overflow: hidden;
+}
+
+.headerMain {
+    padding: 70px 0;
+    background-image: url(../img/sugoi_thumbnail_0324.png);
+}
+
+.headerMainImg {
+    width: 514px;
+}
+
+.headerSubImg {
+    width: 294px;
+    padding-top: 40px;
+}
+
+.scrollAnimation {
+
+    transform: translateX(0);
+    animation-iteration-count: infinite;
+    animation-name: slide;
+    animation-duration: 4500ms;
+    animation-delay: 2000ms;
+    animation-timing-function: cubic-bezier(0.96, 0.01, 0.03, 0.96);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-890px);
+    }
+}
+
+.section {
+    padding: 40px 0;
+    /* 下線を追加 */
+    border-bottom: 1px solid gray;
+}
+
+.section1 {
+    /* 中央に寄せる */
+    justify-content: space-between;
+}
+
+.section1 img {
+    /* 余白の指定 */
+    padding-right: 50px;
+}
+
+.section1 div h1 {
+    font-size: 3rem;
+    padding-bottom: 16px;
+}
+
+.section2 img {
+    padding-bottom: 50px;
+}
+
+.section2 div {
+    justify-content: space-between;
+}
+
+.section2 div div {
+    padding: 20px;
+    width: 470px;
+}
+
+.section3 img {
+    padding-right: 50px;
+}
+
+.section3 h1 {
+    padding-bottom: 20px;
+}
+
+.section4 img {
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.section4 div:nth-child(2) {
+    margin: 0 auto;
+}
+
+.section4 h2 {
+    padding-bottom: 10px;
+}
+
+.section5 .mainContent {
+    background-color: bisque;
+    justify-content: space-around;
+    padding: 50px 0;
+    width: 960px;
+}
+
+.section5 .mainContent div {
+    width: 33.3%;
+    padding: 0 20px;
+}
+
+.subContent {
+    align-items: center;
+}
+
+.section5 .subContent img {
+    border: 1px solid black;
+    margin: auto 20px auto 0;
+}
+
+.section5 .subContent>div {
+    width: 470px;
+}
+
+.section6>div {
+    justify-content: space-between;
+}
+
+.section6>div>div {
+    width: 300px;
+}
+
+.section7 {
+    display: flex;
+    justify-content: center;
+}
+
+.hiddenBox {
+    position: absolute;
+}
+
+.hiddenBox label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #ffff;
+    border-radius: 50%;
+}
+
+.hiddenBox input {
+    display: none;
+}
+
+.hiddenBox .hiddenShow {
+    opacity: 1;
+}
+
+.hiddenBox input:checked~.hiddenShow,
+.hiddenBox input:checked~label {
+    display: none;
+}
+
+footer {
+    background-image: url(../img/sugoi_footer.png);
+    padding: 40px 0;
+}
+
+footer>div {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.footerMenu {
+    width: 80%;
+    justify-content: space-between;
+}
+
+.footerSns {
+    padding-left: 90px;
+}
+
+footer h1 {
+    font-size: 16px;
+    color: #ffff;
+    padding-bottom: 30px;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+}
